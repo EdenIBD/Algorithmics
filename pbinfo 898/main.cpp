@@ -24,6 +24,8 @@ int sumfactcif(int n){
 
 int main()
 {
-    cout << sumfactcif(0);
+    int var;
+    cin >> var;
+    cout << sumfactcif(var);
     return 0;
 }
