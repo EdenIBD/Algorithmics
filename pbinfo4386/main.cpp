@@ -4,7 +4,8 @@ using namespace std;
 
 int main()
 {
-    int n, minn = pow(2, 30), v[1001];
+    int n;
+    long long v[2000], minn = pow(2, 30);
     cin >> n;
 
     for(int i = 1; i<=n; i++){
@@ -20,7 +21,7 @@ int main()
         }
 
     for(int i = 1; i<=n; i++)
-        cout << v[i];
+        cout << v[i] << " ";
 
     return 0;
 }
