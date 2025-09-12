@@ -4,7 +4,7 @@ using namespace std;
 int main() {
     int n;
     cin >> n;
-    double a[53][53], m[53];
+    double a[110][110], m[110];
 
     for(int i = 1; i <=n; i++)
         for(int j = 1; j <= n; j++)
@@ -17,7 +17,6 @@ int main() {
         }
         m[j] = s/n;
     }
-
    
     int new_n = n + 1;
     for (int i = n; i >= n / 2 + 1; i--) {
