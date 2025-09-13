@@ -14,6 +14,5 @@ int main(){
     for(int i = 0; i<strlen(t); i++){
         cout << t + i << endl;
     }
-    
     return 0;
 }
