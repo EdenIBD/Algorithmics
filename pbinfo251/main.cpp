@@ -4,8 +4,8 @@ using namespace std;
 
 int main()
 {
-    ifstream fin("interclasare.in");
-    ofstream fout("interclasare.out");
+    ifstream fin("interclasare2.in");
+    ofstream fout("interclasare2.out");
 
     int n, m, p = 1, a[100001], b[100001], c[200002];
 
@@ -20,17 +20,22 @@ int main()
     int i = 1, j = 1;
 
     while(i <= n && j <= m)
-        if(a[i] < b[j])
+        if(a[i] < b[j]) i++;
+        else if(a[i]>b[j]) j++;
+        else{
             c[p++] = a[i++];
-        else
-            c[p++] = b[j++];
+            j++;
+        }
 
+
+
+/*
     while(i <= n)
         c[p++] = a[i++];
 
     while(j <= m)
         c[p++] = b[j++];
-
+*/
     for(int t = 1; t<=p-1; t++){
         fout << c[t] << " ";
         if(t % 10 == 0 && t != 1) fout << endl;

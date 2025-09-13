@@ -2,14 +2,26 @@
 using namespace std;
 
 int main(){
-    int k, nr = 0;
+    int k, c = 0, n = 1;
 
-    while(k){
-        cin >> k;
-        if(k % 2 == 0 && k != 0) nr++;
+    cin >> k;
+
+    while(n != 0){
+        cin >> n;
+        int copie = n, copie2 = n;
+
+        while(copie){
+        int cif = copie % 10;
+
+        if(cif == k && copie2 % 2 == 0) c++;
+
+        copie /= 10;
+        }
+
     }
 
-    cout << nr;
+
+    cout << c;
 
     return 0;
 }
